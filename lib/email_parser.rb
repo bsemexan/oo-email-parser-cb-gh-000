@@ -10,7 +10,6 @@ attr_accessor :email
   end
 
   def parse
-    self.email
+    self.email.delete(",")
   end
 end
-
