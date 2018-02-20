@@ -13,3 +13,6 @@ attr_accessor :email
     self.email.delete(",").split(" ").uniq
   end
 end
+emails = "john@doe.com person@somewhere.org"
+parser = EmailParser.new(emails)
+parser.parse
