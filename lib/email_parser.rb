@@ -13,6 +13,7 @@ attr_accessor :email
     self.email.uniq
   end
 end
+
 emails = "john@doe.com person@somewhere.org"
 parser = EmailParser.new(emails)
 parser.parse
