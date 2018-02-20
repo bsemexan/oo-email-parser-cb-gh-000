@@ -7,6 +7,7 @@ attr_accessor :parse
 
 @@email = []
 
-  def self.parse
+  def self.parse(email)
+    email
   end
 end
