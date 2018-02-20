@@ -10,7 +10,7 @@ attr_accessor :email
   end
 
   def self.parse
-    self.email.uniq
+    self.email
   end
 end
 
