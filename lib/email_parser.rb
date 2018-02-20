@@ -10,7 +10,7 @@ attr_accessor :email
   end
 
   def self.parse
-    self.email.delete(",").split(" ").uniq
+    self.email
   end
 end
 emails = "john@doe.com person@somewhere.org"
