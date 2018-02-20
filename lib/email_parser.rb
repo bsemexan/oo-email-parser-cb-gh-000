@@ -10,6 +10,6 @@ attr_accessor :email
   end
 
   def parse
-    self.email.delete(",").split(/[,\s]/)
+    self.email.split(/[,\s]/)
   end
 end
