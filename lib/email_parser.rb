@@ -10,7 +10,7 @@ attr_accessor :parse
   end
 
   def self.parse
-    self.email.scan(/\w+\@\w+\.[A-Z]{2,4}/i).uniq
+    self.emailscan(/\w+\@\w+\.[A-Z]{2,4}/i).uniq
   end
 end
 emails = "john@doe.com person@somewhere.org"
