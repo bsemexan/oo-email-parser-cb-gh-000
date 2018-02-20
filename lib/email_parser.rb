@@ -9,7 +9,7 @@ attr_accessor :email
     @email = email
   end
 
-  def self.parse
+  def parse
     self.email
   end
 end
