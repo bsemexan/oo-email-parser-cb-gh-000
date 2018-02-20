@@ -9,7 +9,7 @@ attr_accessor :email
     @email = email
   end
 
-  def parse
+  def self.parse
     self.email.delete(",").split(" ").uniq
   end
 end
