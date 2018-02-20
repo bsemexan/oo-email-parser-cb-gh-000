@@ -5,12 +5,12 @@
 class EmailParser
 attr_accessor :parse
 
-  def initialize(email)
+  def initialized(email)
     @email = email
   end
 
   def self.parse
-    self.emailscan(/\w+\@\w+\.[A-Z]{2,4}/i).uniq
+    self.email.uniq
   end
 end
 emails = "john@doe.com person@somewhere.org"
